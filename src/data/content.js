@@ -23,7 +23,7 @@ const content = {
     ]
   },
   "about": {
-    "bio": "I'm Hoang Chu, pursuing a combined bachelor’s and master’s in Computer Science, Mathematics, and Statistics at Pitzer College and Claremont Graduate University, with expected graduation in May 2027.\n\nMy experience spans business AI agents at Adobe, storage systems at Intercontinental Exchange, and front-end engineering at Periwinkle Trading. My projects include open-source course scheduling and retrieval-augmented generation.\n\nGPA: 3.963 undergraduate · 4.0 graduate."
+    "bio": "I'm Hoang Chu, pursuing a combined bachelor’s and master’s in Computer Science, Mathematics, and Statistics at Pitzer College and Claremont Graduate University, with expected graduation in May 2027.\n\nMy experience spans business AI agents at Adobe, storage systems at Intercontinental Exchange, and front-end engineering at Periwinkle Trading. My projects include open-source course scheduling, retrieval-augmented generation, and an FPL injury-news monitoring project.\n\nGPA: 3.963 undergraduate · 4.0 graduate."
   },
   "experience": {
     "entries": [
@@ -86,6 +86,18 @@ const content = {
           "RAG",
           "Vector Search",
           "Text Chunking"
+        ],
+        "link": null
+      },
+      {
+        "title": "Fantasy Premier League Player Recommendation",
+        "subtitle": "Independent Project · 2026",
+        "description": "Developed an automated agent to monitor football injury news, identify affected players, and estimate their probability of missing upcoming matches to inform Fantasy Premier League player recommendations.",
+        "tech": [
+          "News Extraction",
+          "LLM Agents",
+          "Probabilistic Modeling",
+          "Fantasy Premier League"
         ],
         "link": null
       }
