@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import content from "../data/content";
 import useTypewriter from "../hooks/useTypewriter";
 import { BaseDuck, WobbleDuck } from "../assets/duck";
+import BalancedBadges from "./BalancedBadges";
 import EasterEggTerminal from "./EasterEggTerminal";
 
 export default function Hero() {
@@ -67,20 +68,16 @@ export default function Hero() {
             Tech Stack
           </h2>
           <div className="space-y-3">
-            <ul aria-label="Programming languages" className="flex flex-wrap justify-center gap-2">
-              {content.skills.categories[0].items.map((item) => (
-                <li key={item} className="text-sm font-semibold px-3 py-1.5 rounded-full border border-accent-yellow/20 bg-accent-yellow/10 text-accent-yellow">
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <ul aria-label="Technologies" className="flex flex-wrap justify-center gap-2">
-              {content.skills.categories.slice(1, 3).flatMap((category) => category.items).map((item) => (
-                <li key={item} className="text-sm font-semibold px-3 py-1.5 rounded-full border border-accent-mint/20 bg-accent-mint/10 text-accent-mint">
-                  {item}
-                </li>
-              ))}
-            </ul>
+            <BalancedBadges
+              label="Programming languages"
+              items={content.skills.categories[0].items}
+              className="text-sm font-semibold px-3 py-1.5 rounded-full border border-accent-yellow/20 bg-accent-yellow/10 text-accent-yellow"
+            />
+            <BalancedBadges
+              label="Technologies"
+              items={content.skills.categories.slice(1, 3).flatMap((category) => category.items)}
+              className="text-sm font-semibold px-3 py-1.5 rounded-full border border-accent-mint/20 bg-accent-mint/10 text-accent-mint"
+            />
           </div>
         </div>
       </motion.div>
