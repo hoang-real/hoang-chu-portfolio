@@ -4,8 +4,7 @@ const content = {
       "About",
       "Experience",
       "Projects",
-      "Skills",
-      "Contact"
+      "Skills"
     ]
   },
   "hero": {
@@ -171,12 +170,6 @@ const content = {
         ]
       }
     ]
-  },
-  "contact": {
-    "email": "harrychu301@gmail.com",
-    "github": "https://github.com/Renaxis-Math",
-    "linkedin": "https://linkedin.com/in/harryc223",
-    "inviteLine": "Let’s connect about machine learning, software engineering, mathematics, or a project you’re working on."
   }
 };
 
