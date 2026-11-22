@@ -100,6 +100,20 @@ const content = {
           "Fantasy Premier League"
         ],
         "link": null
+      },
+      {
+        "title": "ImageBERT Dataset Pipeline",
+        "subtitle": "Distributed ML Data Infrastructure",
+        "description": "Developed a distributed web-scraping prototype in Go to generate webpage screenshots paired with token bounding boxes for visual language-model pretraining. Implemented leader–worker URL assignment over RPC, concurrent headless Chrome scraping, and DOM Range-based token localization. Added screenshot-based text visibility checks, CSV annotation export, and Python/OpenCV tools to inspect generated samples.",
+        "tech": [
+          "Go",
+          "RPC",
+          "chromedp",
+          "JavaScript",
+          "Python",
+          "OpenCV"
+        ],
+        "link": null
       }
     ]
   },
