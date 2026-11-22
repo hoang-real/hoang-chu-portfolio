@@ -138,7 +138,6 @@ const content = {
         "label": "Data & Machine Learning",
         "color": "mint",
         "items": [
-          "Databricks",
           "BeautifulSoup",
           "PySpark",
           "PyTorch",
@@ -149,6 +148,8 @@ const content = {
         "label": "Software & Infrastructure",
         "color": "peach",
         "items": [
+          "Django",
+          "Flask",
           "Docker",
           "Kubernetes",
           "REST APIs",
