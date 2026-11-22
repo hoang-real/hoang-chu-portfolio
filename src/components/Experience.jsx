@@ -85,7 +85,7 @@ export default function Experience() {
                         className="text-text-secondary text-sm leading-relaxed flex gap-2"
                       >
                         <span className="text-accent-yellow mt-1 shrink-0">▸</span>
-                        <span>{bullet}</span>
+                        <span className="min-w-0 flex-1" style={{ textWrap: "balance", overflowWrap: "break-word" }}>{bullet}</span>
                       </li>
                     ))}
                   </ul>
