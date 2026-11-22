@@ -18,8 +18,7 @@ const content = {
     ],
     "statusBadges": [
       "Computer Science · Mathematics · Statistics",
-      "Pitzer College & Claremont Graduate University",
-      "Expected graduation · May 2027"
+      "Pitzer College & Claremont Graduate University"
     ]
   },
   "about": {
