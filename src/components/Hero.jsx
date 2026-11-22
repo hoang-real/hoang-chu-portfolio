@@ -1,11 +1,12 @@
-import { useState, useEffect } from "react";
+import { lazy, Suspense, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import content from "../data/content";
 import useTypewriter from "../hooks/useTypewriter";
 import { BaseDuck, WobbleDuck } from "../assets/duck";
 import BalancedBadges from "./BalancedBadges";
-import EasterEggTerminal from "./EasterEggTerminal";
+
+const EasterEggTerminal = lazy(() => import("./EasterEggTerminal"));
 
 export default function Hero() {
   const navigate = useNavigate();
@@ -25,12 +26,7 @@ export default function Hero() {
       id="hero"
       className="min-h-screen flex flex-col items-center justify-center px-6 pt-20 pb-12 text-center"
     >
-      <motion.div
-        className="w-full max-w-4xl"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ type: "spring", stiffness: 100, damping: 20 }}
-      >
+      <div className="w-full max-w-4xl">
         <WobbleDuck onClick={() => setShowTerminal(true)} className="mb-6">
           <BaseDuck size={140} />
         </WobbleDuck>
@@ -80,13 +76,17 @@ export default function Hero() {
             />
           </div>
         </div>
-      </motion.div>
+      </div>
 
-      <EasterEggTerminal
-        show={showTerminal}
-        onClose={() => setShowTerminal(false)}
-        navigate={navigate}
-      />
+      {showTerminal && (
+        <Suspense fallback={null}>
+          <EasterEggTerminal
+            show
+            onClose={() => setShowTerminal(false)}
+            navigate={navigate}
+          />
+        </Suspense>
+      )}
     </section>
   );
 }
