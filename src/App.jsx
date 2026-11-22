@@ -6,7 +6,6 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import About from "./components/About";
-import Contact from "./components/Contact";
 
 const Thoughts = lazy(() => import("./pages/Thoughts"));
 
@@ -20,7 +19,6 @@ function PortfolioLayout() {
         <Experience />
         <Projects />
         <Skills />
-        <Contact />
       </main>
     </>
   );
