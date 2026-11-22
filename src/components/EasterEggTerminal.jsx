@@ -121,7 +121,6 @@ export default function EasterEggTerminal({ show, onClose, navigate }) {
             transition={{ type: "spring", stiffness: 400, damping: 25 }}
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Title bar */}
             <div className="flex items-center gap-2 mb-4">
               <div className="w-3 h-3 rounded-full bg-red-400" />
               <div className="w-3 h-3 rounded-full bg-accent-yellow" />
@@ -135,7 +134,6 @@ export default function EasterEggTerminal({ show, onClose, navigate }) {
               </button>
             </div>
 
-            {/* Output */}
             <div ref={outputRef} className="space-y-1 mb-3 max-h-64 overflow-y-auto">
               {lines.map((line, i) => {
                 if (line.type === "ls-output") {
@@ -166,7 +164,6 @@ export default function EasterEggTerminal({ show, onClose, navigate }) {
                 );
               })}
 
-              {/* Dog GIF easter egg */}
               <AnimatePresence>
                 {showDog && (
                   <motion.div
@@ -186,7 +183,6 @@ export default function EasterEggTerminal({ show, onClose, navigate }) {
               </AnimatePresence>
             </div>
 
-            {/* Input */}
             <form onSubmit={handleSubmit} className="flex items-center gap-2">
               <span className="text-accent-yellow">{">"}</span>
               <input

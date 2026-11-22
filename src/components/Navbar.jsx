@@ -18,7 +18,6 @@ export default function Navbar() {
           🦆 {content.hero.name}
         </Link>
 
-        {/* Desktop nav */}
         <div className="hidden md:flex gap-6">
           {content.nav.items.map((item) => (
             <Link
@@ -34,7 +33,6 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Mobile hamburger */}
         <button
           className="md:hidden text-text-primary text-2xl"
           onClick={() => setIsOpen(!isOpen)}
@@ -45,7 +43,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile drawer */}
       <AnimatePresence>
         {isOpen && (
           <motion.div

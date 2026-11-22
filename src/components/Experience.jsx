@@ -46,7 +46,6 @@ export default function Experience() {
       </motion.h2>
 
       <div className="relative">
-        {/* Timeline line */}
         <div className="absolute left-4 md:left-6 top-0 bottom-0 w-0.5 bg-accent-yellow/20 rounded-full" />
 
         <div className="space-y-8">
@@ -62,10 +61,8 @@ export default function Experience() {
                 viewport={{ once: true, margin: "-50px" }}
                 className="relative pl-12 md:pl-16"
               >
-                {/* Timeline dot */}
                 <div className="absolute left-2.5 md:left-4.5 top-6 w-3 h-3 rounded-full bg-accent-yellow border-2 border-bg z-10" />
 
-                {/* Card */}
                 <div className="relative bg-bg-card rounded-3xl p-6 hover:bg-bg-card-hover transition-colors">
 
 

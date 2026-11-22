@@ -29,12 +29,10 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ type: "spring", stiffness: 100, damping: 20 }}
       >
-        {/* Duck */}
         <WobbleDuck onClick={() => setShowTerminal(true)} className="mb-6">
           <BaseDuck size={140} />
         </WobbleDuck>
 
-        {/* Status badge */}
         <div className="h-8 mb-6 flex items-center justify-center">
           <AnimatePresence mode="wait">
             <motion.span
@@ -50,17 +48,14 @@ export default function Hero() {
           </AnimatePresence>
         </div>
 
-        {/* Name */}
         <h1 className="text-5xl md:text-7xl font-extrabold text-text-primary mb-4 tracking-tight">
           {content.hero.name}
         </h1>
 
-        {/* Tagline */}
         <p className="text-lg md:text-xl text-text-secondary mb-8 max-w-lg mx-auto" style={{ whiteSpace: 'pre-line' }}>
           {content.hero.tagline}
         </p>
 
-        {/* Typewriter */}
         <div className="text-accent-mint text-base md:text-lg font-semibold h-8">
           <span>exploring </span>
           <span className="text-accent-yellow">{displayText}</span>

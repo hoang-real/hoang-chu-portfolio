@@ -74,7 +74,7 @@ const content = {
           "Async APIs",
           "Load Balancing"
         ],
-        "metrics": "Résumé-reported usage: 4,163 of 6,000 students; 4,500+ requests/hour; 60% lower primary database load.",
+        "metrics": "Used by 4,163 of 6,000 students; 4,500+ requests/hour; 60% lower primary database load.",
         "link": null
       },
       {
