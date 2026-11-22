@@ -18,8 +18,7 @@ const content = {
     ],
     "statusBadges": [
       "Computer Science · Mathematics · Statistics",
-      "Pitzer College & Claremont Graduate University",
-      "Expected graduation · May 2027"
+      "Pitzer College & Claremont Graduate University"
     ]
   },
   "about": {
@@ -100,6 +99,20 @@ const content = {
           "Fantasy Premier League"
         ],
         "link": null
+      },
+      {
+        "title": "ImageBERT Dataset Pipeline",
+        "subtitle": "Distributed ML Data Infrastructure",
+        "description": "Developed a distributed web-scraping prototype in Go to generate webpage screenshots paired with token bounding boxes for visual language-model pretraining. Implemented leader–worker URL assignment over RPC, concurrent headless Chrome scraping, and DOM Range-based token localization. Added screenshot-based text visibility checks, CSV annotation export, and Python/OpenCV tools to inspect generated samples.",
+        "tech": [
+          "Go",
+          "RPC",
+          "chromedp",
+          "JavaScript",
+          "Python",
+          "OpenCV"
+        ],
+        "link": null
       }
     ]
   },
@@ -124,7 +137,6 @@ const content = {
         "label": "Data & Machine Learning",
         "color": "mint",
         "items": [
-          "Databricks",
           "BeautifulSoup",
           "PySpark",
           "PyTorch",
@@ -135,6 +147,8 @@ const content = {
         "label": "Software & Infrastructure",
         "color": "peach",
         "items": [
+          "Django",
+          "Flask",
           "Docker",
           "Kubernetes",
           "REST APIs",
