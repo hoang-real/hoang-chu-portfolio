@@ -50,12 +50,12 @@ const content = {
       },
       {
         "company": "Periwinkle Trading",
-        "role": "Software Engineer Intern · Front-End",
+        "role": "Software Developer Co-Op · Backend",
         "date": "January – May 2024 · Washington, DC",
         "bullets": [
-          "Implemented role-based access control in NestJS with authorization middleware and audit logging for protected research endpoints.",
-          "Built MongoDB aggregation pipelines for trading and signal events, integrating Redis caching to support near-real-time research dashboards.",
-          "Designed a Python library for repeatable Jupyter execution using a versioned compute DAG, dependency invalidation, memoization, and topological scheduling."
+          "Designed and implemented a C++ library using OOP abstractions to make repeated Jupyter run idempotent and deterministic, with a versioned compute DAG, dependency invalidation, memoization, and topological scheduling.",
+          "Designed a persistent order-statistic tree with subtree augmentation and path-copying updates to maintain real-time signal rankings, support O(log n) rank updates and O(log n + k) top-k retrieval, without repeatedly re-sorting full data.",
+          "Implemented a bounded, sequence-numbered ring buffer to route completed-trade events to position, P&L, and transaction-cost services, tracking each service independently and preventing unread events from being overwritten."
         ]
       }
     ]
