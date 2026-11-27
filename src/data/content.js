@@ -39,13 +39,13 @@ const content = {
       },
       {
         "company": "Intercontinental Exchange",
-        "role": "Software Engineer Intern · Storage Team",
+        "role": "Software Engineer Intern · Storage Infrastructure",
         "date": "June – August 2025 · Atlanta, GA",
         "bullets": [
-          "Developed inventory-based stale-object cleanup for a multi-cloud financial data platform, reconciling AWS S3 and Azure Blob inventory snapshots against application metadata.",
-          "Replaced exhaustive prefix scans with inventory-based discovery and scheduled reconciliation tasks.",
-          "Engineered a distributed deletion pipeline with rate limiting and bounded worker queues to control concurrency and memory consumption.",
-          "Parallelized deletion-task enqueueing with multithreading and batched queue writes."
+          "Engineered partitioned Hash Anti-Joins to reconcile AWS S3 and Azure Blob inventory snapshots with active object metadata, replacing exhaustive prefix scans to eliminate 6.8M daily calls and yield $7.84M in annual net savings.",
+          "Engineered a distributed deletion pipeline using hierarchical Token Buckets, Semaphores, and Bounded Queues to control request rates, in-flight operations, and memory consumption, supporting cleanup of up to 5 PB/day of data.",
+          "Parallelized deletion task enqueueing using Thread Pools and a Producer-Consumer architecture with batched queue writes, eliminating sequential I/O bottlenecks and reducing processing runtime by 66% from 6 hours to 2 hours.",
+          "Built Grafana dashboards tracking 20+ operational metrics, including queue depth and deletion throughput, using timestamp-based timeout detection to identify stalled deletion tasks across 1,000,000+ daily cleanup candidates."
         ]
       },
       {
