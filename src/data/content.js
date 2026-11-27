@@ -137,9 +137,14 @@ const content = {
         "label": "Data & Machine Learning",
         "color": "mint",
         "items": [
+          "PyTorch",
+          "SentenceTransformers",
+          "Langfuse",
+          "Claude API",
+          "MCP",
+          "RAG",
           "BeautifulSoup",
           "PySpark",
-          "PyTorch",
           "PostgreSQL"
         ]
       },
@@ -147,12 +152,16 @@ const content = {
         "label": "Software & Infrastructure",
         "color": "peach",
         "items": [
-          "Django",
-          "Flask",
+          "AWS",
+          "Azure",
+          "Grafana",
+          "GitHub Actions",
           "Docker",
           "Kubernetes",
           "REST APIs",
           "React",
+          "Django",
+          "Flask",
           "Git"
         ]
       },
