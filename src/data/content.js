@@ -21,7 +21,7 @@ const content = {
     ]
   },
   "about": {
-    "bio": "I'm Hoang Chu, pursuing a combined bachelor’s and master’s in Computer Science, Mathematics, and Statistics at Pitzer College and Claremont Graduate University.\n\nMy experience spans business AI agents at Adobe, storage systems at Intercontinental Exchange, and front-end engineering at Periwinkle Trading. My projects include open-source course scheduling, retrieval-augmented generation, and an FPL injury-news monitoring project.\n\nGPA: 3.963 undergraduate · 4.0 graduate."
+    "bio": "I'm Hoang Chu, pursuing a combined bachelor’s and master’s in Computer Science, Mathematics, and Statistics at Pitzer College and Claremont Graduate University.\n\nMy experience spans Adobe Express at Adobe, storage systems at Intercontinental Exchange, and backend engineering at Periwinkle Trading. My projects include open-source course scheduling, retrieval-augmented generation, and an FPL injury-news monitoring project.\n\nGPA: 3.963 undergraduate · 4.0 graduate."
   },
   "experience": {
     "entries": [
