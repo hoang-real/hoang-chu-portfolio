@@ -21,40 +21,41 @@ const content = {
     ]
   },
   "about": {
-    "bio": "I'm Hoang Chu, pursuing a combined bachelor’s and master’s in Computer Science, Mathematics, and Statistics at Pitzer College and Claremont Graduate University.\n\nMy experience spans business AI agents at Adobe, storage systems at Intercontinental Exchange, and front-end engineering at Periwinkle Trading. My projects include open-source course scheduling, retrieval-augmented generation, and an FPL injury-news monitoring project.\n\nGPA: 3.963 undergraduate · 4.0 graduate."
+    "bio": "I'm Hoang Chu, pursuing a combined bachelor’s and master’s in Computer Science, Mathematics, and Statistics at Pitzer College and Claremont Graduate University.\n\nMy experience spans Adobe Express at Adobe, storage systems at Intercontinental Exchange, and backend engineering at Periwinkle Trading. My projects include open-source course scheduling, retrieval-augmented generation, and an FPL injury-news monitoring project.\n\nGPA: 3.963 undergraduate · 4.0 graduate."
   },
   "experience": {
     "entries": [
       {
         "company": "Adobe Inc",
-        "role": "Machine Learning Engineer Intern · Business AI Agent Team",
+        "role": "Software Engineer Intern · Adobe Express Agentic AI",
         "date": "May – August 2026 · Seattle, WA",
         "bullets": [
-          "Built a centralized prompt retrieval and management service integrating Langfuse for generative creative workflows.",
-          "Implemented conversation summarization using Claude AI and trained SentenceTransformers for intent and entity extraction to normalize semantically equivalent advertiser prompts.",
-          "Developed an MCP server with GraphQL integration for persistent LLM memory CRUD operations and structured assistant state.",
-          "Built automated LLM evaluation infrastructure with Langfuse and GitHub Actions to test MCP tools and prompt variations for behavioral regressions."
+          "Built a prompt management service integrating Langfuse, using a Hash Map for environment-specific version resolution and an LRU Cache for prompt retrieval, cutting iteration time by 75% from > 2 hours to ~ 30 minutes.",
+          "Fine-tuned SentenceTransformers with contrastive learning and in-batch negatives to retrieve canonical intent-entity pairs via cosine similarity, mapping semantically equivalent advertiser prompts into consistent creative controls.",
+          "Engineered an incremental conversation summarization pipeline using Claude Opus API, applying token-budget thresholds and sliding-window context retention to compress older messages across 10,000+ daily conversations.",
+          "Implemented persistent agent memory via MCP tools with schema-validated CRUD operations, idempotent writes, and optimistic concurrency control to prevent duplicate or conflicting updates across hourly user preference writes.",
+          "Built an automated LLM regression testing framework using Langfuse and GitHub Actions, utilizing bounded asynchronous task queues and concurrent workers to compare prompt versions and validate MCP tool execution."
         ]
       },
       {
         "company": "Intercontinental Exchange",
-        "role": "Software Engineer Intern · Storage Team",
+        "role": "Software Engineer Intern · Storage Infrastructure",
         "date": "June – August 2025 · Atlanta, GA",
         "bullets": [
-          "Developed inventory-based stale-object cleanup for a multi-cloud financial data platform, reconciling AWS S3 and Azure Blob inventory snapshots against application metadata.",
-          "Replaced exhaustive prefix scans with inventory-based discovery and scheduled reconciliation tasks.",
-          "Engineered a distributed deletion pipeline with rate limiting and bounded worker queues to control concurrency and memory consumption.",
-          "Parallelized deletion-task enqueueing with multithreading and batched queue writes."
+          "Engineered partitioned Hash Anti-Joins to reconcile AWS S3 and Azure Blob inventory snapshots with active object metadata, replacing exhaustive prefix scans to eliminate 6.8M daily calls and yield $7.84M in annual net savings.",
+          "Engineered a distributed deletion pipeline using hierarchical Token Buckets, Semaphores, and Bounded Queues to control request rates, in-flight operations, and memory consumption, supporting cleanup of up to 5 PB/day of data.",
+          "Parallelized deletion task enqueueing using Thread Pools and a Producer-Consumer architecture with batched queue writes, eliminating sequential I/O bottlenecks and reducing processing runtime by 66% from 6 hours to 2 hours.",
+          "Built Grafana dashboards tracking 20+ operational metrics, including queue depth and deletion throughput, using timestamp-based timeout detection to identify stalled deletion tasks across 1,000,000+ daily cleanup candidates."
         ]
       },
       {
         "company": "Periwinkle Trading",
-        "role": "Software Engineer Intern · Front-End",
+        "role": "Software Developer Co-Op · Backend",
         "date": "January – May 2024 · Washington, DC",
         "bullets": [
-          "Implemented role-based access control in NestJS with authorization middleware and audit logging for protected research endpoints.",
-          "Built MongoDB aggregation pipelines for trading and signal events, integrating Redis caching to support near-real-time research dashboards.",
-          "Designed a Python library for repeatable Jupyter execution using a versioned compute DAG, dependency invalidation, memoization, and topological scheduling."
+          "Designed and implemented a C++ library using OOP abstractions to make repeated Jupyter run idempotent and deterministic, with a versioned compute DAG, dependency invalidation, memoization, and topological scheduling.",
+          "Designed a persistent order-statistic tree with subtree augmentation and path-copying updates to maintain real-time signal rankings, support O(log n) rank updates and O(log n + k) top-k retrieval, without repeatedly re-sorting full data.",
+          "Implemented a bounded, sequence-numbered ring buffer to route completed-trade events to position, P&L, and transaction-cost services, tracking each service independently and preventing unread events from being overwritten."
         ]
       }
     ]
@@ -136,9 +137,14 @@ const content = {
         "label": "Data & Machine Learning",
         "color": "mint",
         "items": [
+          "PyTorch",
+          "SentenceTransformers",
+          "Langfuse",
+          "Claude API",
+          "MCP",
+          "RAG",
           "BeautifulSoup",
           "PySpark",
-          "PyTorch",
           "PostgreSQL"
         ]
       },
@@ -146,12 +152,16 @@ const content = {
         "label": "Software & Infrastructure",
         "color": "peach",
         "items": [
-          "Django",
-          "Flask",
+          "AWS",
+          "Azure",
+          "Grafana",
+          "GitHub Actions",
           "Docker",
           "Kubernetes",
           "REST APIs",
           "React",
+          "Django",
+          "Flask",
           "Git"
         ]
       },
