@@ -27,13 +27,14 @@ const content = {
     "entries": [
       {
         "company": "Adobe Inc",
-        "role": "Machine Learning Engineer Intern · Business AI Agent Team",
+        "role": "Software Engineer Intern · Adobe Express Agentic AI",
         "date": "May – August 2026 · Seattle, WA",
         "bullets": [
-          "Built a centralized prompt retrieval and management service integrating Langfuse for generative creative workflows.",
-          "Implemented conversation summarization using Claude AI and trained SentenceTransformers for intent and entity extraction to normalize semantically equivalent advertiser prompts.",
-          "Developed an MCP server with GraphQL integration for persistent LLM memory CRUD operations and structured assistant state.",
-          "Built automated LLM evaluation infrastructure with Langfuse and GitHub Actions to test MCP tools and prompt variations for behavioral regressions."
+          "Built a prompt management service integrating Langfuse, using a Hash Map for environment-specific version resolution and an LRU Cache for prompt retrieval, cutting iteration time by 75% from > 2 hours to ~ 30 minutes.",
+          "Fine-tuned SentenceTransformers with contrastive learning and in-batch negatives to retrieve canonical intent-entity pairs via cosine similarity, mapping semantically equivalent advertiser prompts into consistent creative controls.",
+          "Engineered an incremental conversation summarization pipeline using Claude Opus API, applying token-budget thresholds and sliding-window context retention to compress older messages across 10,000+ daily conversations.",
+          "Implemented persistent agent memory via MCP tools with schema-validated CRUD operations, idempotent writes, and optimistic concurrency control to prevent duplicate or conflicting updates across hourly user preference writes.",
+          "Built an automated LLM regression testing framework using Langfuse and GitHub Actions, utilizing bounded asynchronous task queues and concurrent workers to compare prompt versions and validate MCP tool execution."
         ]
       },
       {
